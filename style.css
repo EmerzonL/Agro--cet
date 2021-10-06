@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: #fff;
+    font-family: sans-serif;
+    color: #000;
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    position: fixed;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
+}
+
+.nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    color: #1ABB00;
+
+}
+
+.menu__ul {
+    height: 100%;
+    display: flex;
+}
+
+ul,
+li a {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #000;
+
+}
+
+ul .menu__li1 a {
+    color: #fff;
+    background: #1ABB00;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+a:hover {
+    color: #1ABB00;
+}
+
+/* rss*/
+
+.menu-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#check,
+.menu-icon {
+    display: none;
+}
+
+@media (max-width:768px) {
+    .checkbtn {
+        display: block;
+    }
+
+    .menu-icon {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+
+    .menu__ul,
+    ul {
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        background: #fff;
+        width: 100%;
+        height: 400px;
+        right: 0;
+        transition: all 1s;
+    }
+
+    .menu__ul ul li {
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+.contenedor {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .info {
+    width: 400px;
+}
+
+.contenedor .info h1 {
+    font-size: 3rem;
+}
+
+
+.contenedor .info h1 span {
+    color: #1ABB00;
+}
+
+.contenedor .info h2 {
+    color: #1ABB00;
+    font-size: 2.5rem;
+}
+
+.contenedor .info p {
+    font-weight: bold;
+}
+
+.comprar {
+    background: #1ABB00;
+    border: 2px solid #1ABB00;
+    padding: .5rem;
+    width: 100px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: .6rem;
+    cursor: pointer;
+}
+
+.comprar:hover {
+    background: transparent;
+    color: #1ABB00;
+    font-weight: bold;
+}
+
+.vermas {
+
+    border: 2px solid #1ABB00;
+    background: #fff;
+    padding: .5rem;
+    width: 100px;
+    color: #1ABB00;
+    font-weight: bold;
+    border-radius: .6rem;
+    cursor: pointer;
+}
+
+.info__img img {
+    width: 100%;
+    max-width: 500px;
+}
+
+@media(max-width:900px) {
+    .contenedor {
+        display: block;
+        text-align: center;
+    }
+
+    .contenedor .info {
+        width: 100%;
+
+    }
+
+    .contenedor .info p {
+        padding: 0px 100px;
+
+    }
+
+    .info__img {
+        max-width: 500px;
+        margin: auto;
+    }
+}
+
+.titulocars h2 {
+    color: #1ABB00;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.contenedor__cars {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.cars {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.cars img {
+    width: 100%;
+}
+
+.cars h2 {
+    color: #1ABB00;
+    font-weight: bold;
+    padding-top: 1.4rem;
+}
+
+.precio {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    padding-top: 1.4rem;
+}
+
+/***/
+
+.contecto__cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contacto {
+    width: 100%;
+    max-width: 500px;
+    border: 4px solid #1ABB00;
+    padding: 2rem;
+    border-radius: .6rem;
+}
+
+.input {
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    border: 3px solid #1ABB00;
+    font-size: 1rem;
+}
+
+.input:focus {
+    outline: none;
+    background: #45ff17a1;
+}
+
+
+.submit {
+    background: #1ABB00;
+    border: 3px solid #1ABB00;
+    width: 100%;
+    border-radius: .5rem;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-left: 10px;
+
+}
+
+.submit:hover {
+    background: #25f500;
+    border: 3px solid #25f500;
+    color: #fff;
+    font-weight: bold;
+}
+
+.textarea {
+    min-height: 80px;
+    resize: none;
+}
+
+/**/
+
+.footer--conten {
+    width: 100%;
+    background: #1ABB00;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding: 20px;
+    font-size: 1.2rem;
+}
